@@ -116,7 +116,7 @@ pub trait Integer: private::Sealed {
 }
 
 // Seal to prevent downstream implementations of the Integer trait.
-mod private {
+pub mod private {
     #[doc(hidden)]
     pub trait Sealed: Copy {
         #[doc(hidden)]
